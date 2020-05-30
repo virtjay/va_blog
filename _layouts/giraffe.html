@@ -1,0 +1,12 @@
+---
+layout: "wrapper"
+author: "virtue"
+---
+<h1>This is based on the giraffe layout</h1>
+<hr>
+
+{% for person in site.data.people %}
+	{{person.name}}, {{person.occupation}} <br>
+{% endfor %}
+
+{{content}}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{site.title}}</title>
+</head>
+<body>
+	{% if page.title == "Welcome says v to Jekyll!" %}
+
+	<h1>Some standard text after the header copyright</h1>
+
+	{% elsif page.title == "About a boy" %}
+		Extra Content
+	{% else %}
+		<h3> No information else condition </h3>
+
+	{% endif %}
+<!-- 		{% include header.html color="blue" %} -->
+		{{content}}
+	
+
+	<h2>Standard footer</h2>
+</body>
+</html>
